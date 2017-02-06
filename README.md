@@ -1,8 +1,6 @@
 
 # Nat JavaScript Bridge
 
-[TOC]
-
 ## communication
 
 #### call(to, callback)
