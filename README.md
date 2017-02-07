@@ -1,6 +1,3 @@
-
-# Nat JavaScript Bridge
-
 ## communication
 
 #### call(to, callback)
