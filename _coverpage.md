@@ -10,4 +10,4 @@
 [GitHub](https://github.com/natjs/)
 [Get Started](#quick-start)
 
-![color](#fff)
+<!-- ![color](#fff) -->

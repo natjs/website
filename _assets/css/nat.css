@@ -896,3 +896,8 @@ pre::after {
   text-align: right;
   top: 0;
 }
+
+/* custom */
+section.cover {
+  background: #fff !important;
+}
