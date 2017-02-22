@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
 
-/* #42b983, #5092ff */
+/* #42b983, #3d83fb */
 
 *{
   box-sizing: border-box;
@@ -17,8 +17,8 @@
 }
 
 .progress{
-  background-color: #5092ff;
-  background-color: var(--theme-color, #5092ff);
+  background-color: #3d83fb;
+  background-color: var(--theme-color, #3d83fb);
   height: 2px;
   left: 0px;
   position: fixed;
@@ -92,15 +92,15 @@ nav a{
 }
 
 nav a:hover{
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
 }
 
 nav a.active{
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
-  border-bottom: 2px solid #5092ff;
-  border-bottom: 2px solid var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
+  border-bottom: 2px solid #3d83fb;
+  border-bottom: 2px solid var(--theme-color, #3d83fb);
 }
 
 /* navbar dropdown */
@@ -115,8 +115,8 @@ nav li ul{
   background-color: rgba(255, 255, 255, 0.6);
   border-width: 1px;
   border-style: solid;
-  border-color: #5092ff;
-  border-color: var(--theme-color, #5092ff);
+  border-color: #3d83fb;
+  border-color: var(--theme-color, #3d83fb);
   opacity: 0;
   overflow: hidden;
   padding: 0;
@@ -184,8 +184,8 @@ nav.no-badge{
   color: #fff;
   height: 80px;
   width: 80px;
-  fill: #5092ff;
-  fill: var(--theme-color, #5092ff);
+  fill: #3d83fb;
+  fill: var(--theme-color, #3d83fb);
 }
 
 .github-corner:hover .octo-arm{
@@ -290,8 +290,8 @@ main{
 }
 
 .sidebar-toggle span{
-  background-color: #5092ff;
-  background-color: var(--theme-color, #5092ff);
+  background-color: #3d83fb;
+  background-color: var(--theme-color, #3d83fb);
   display: block;
   width: 16px;
   height: 2px;
@@ -603,11 +603,11 @@ section.cover .cover-main p:last-child a{
   border-radius: 2em;
   border-width: 1px;
   border-style: solid;
-  border-color: #5092ff;
-  border-color: var(--theme-color, #5092ff);
+  border-color: #3d83fb;
+  border-color: var(--theme-color, #3d83fb);
   box-sizing: border-box;
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
   font-size: 1.05em;
   letter-spacing: 0.1em;
   padding: 0.75em 2em;
@@ -619,8 +619,8 @@ section.cover .cover-main p:last-child a{
 }
 section.cover .cover-main p:last-child a:last-child{
   margin-right: 0;
-  background-color: #5092ff;
-  background-color: var(--theme-color, #5092ff);
+  background-color: #3d83fb;
+  background-color: var(--theme-color, #3d83fb);
   color: #fff;
 }
 section.cover .cover-main p:last-child a:last-child:hover{
@@ -669,8 +669,8 @@ body {
   padding: 0;
 }
 .sidebar ul li.active>a {
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
   font-weight: 600;
 }
 
@@ -681,8 +681,8 @@ body {
 }
 
 .markdown-section a {
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
   font-weight: 600;
 }
 
@@ -729,8 +729,8 @@ body {
 
 .markdown-section blockquote {
   color: #858585;
-  border-left: 4px solid #5092ff;
-  border-left: 4px solid var(--theme-color, #5092ff);
+  border-left: 4px solid #3d83fb;
+  border-left: 4px solid var(--theme-color, #3d83fb);
   margin: 2em 0;
   padding-left: 20px;
 }
@@ -798,8 +798,8 @@ body {
 }
 
 .token.string {
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
 }
 
 .token.selector {
@@ -815,8 +815,8 @@ body {
 }
 
 .token.attr-value, .token.control, .token.directive, .token.unit {
-  color: #5092ff;
-  color: var(--theme-color, #5092ff);
+  color: #3d83fb;
+  color: var(--theme-color, #3d83fb);
 }
 
 .token.keyword {
