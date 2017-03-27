@@ -5,10 +5,24 @@
 	<title>Nat.js - Next generation mobile framework for building native / hybrid apps.</title>
 	<meta name="description" content="Next generation mobile framework for building native / hybrid apps. lightweight, cross-platform, customizable, open source.">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="_assets/css/nat.css">
+	<!-- <link rel="stylesheet" href="_assets/css/nat.css"> -->
+	<link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
 	<style>
-	.cover-main img[alt="nat"] {
+	.cover {
+		background: #fff !important;
+	}
+	.cover img[alt="nat"] {
 		width: 340px;
+	}
+	.app-sub-sidebar .section-link::before {
+		content: '';
+	}
+	.github-corner svg {
+		fill: transparent;
+	}
+	.github-corner svg path:nth-child(2),
+	.github-corner svg path:nth-child(3) {
+		fill: #d2d2d2;
 	}
 	</style>
 </head>
@@ -16,6 +30,16 @@
 <body>
 	<div id="app"></div>
 
-	<script src="//unpkg.com/docsify/lib/docsify.js" data-router data-coverpage data-homepage="docs.md" data-max-level="3" data-repo=""></script>
+	<script src="//unpkg.com/docsify/lib/docsify.js"
+	data-coverpage
+	data-auto2top
+	data-load-sidebar
+	data-name="Nat.js"
+	data-homepage="started.md"
+	data-max-level="4"
+	data-sub-max-level="1"
+	data-theme-color="#3d83fb"
+	data-repo="https://github.com/natjs/nat"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
