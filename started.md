@@ -6,7 +6,7 @@
 npm install natjs --save
 ```
 
-### Add moudles you need
+### Add modules you need
 
 ```bash
 weexpack plugin add [nat moudle]
