@@ -1,10 +1,61 @@
 # Audio
 
-### play(path, callback)
-	path: String
+```bash
+weexpack plugin add nat-media-audio
+```
+
+### play(url, callback)
+
+#### Arguments
+1. `url` (String)
+2. [`callback`] (function)
+
+#### Example
+```js
+Nat.audio.play('http://cdn.instapp.io/nat/samples/audio.mp3')
+```
+
+```js
+Nat.audio.play('http://cdn.instapp.io/nat/samples/audio.mp3', () => {
+    console.log('started')
+})
+```
+
+---
 
 ### pause(callback)
+
+#### Arguments
+1. [`callback`] (function)
+
+#### Example
+```js
+Nat.audio.pause()
+```
+
+```js
+Nat.audio.pause(() => {
+    console.log('paused')
+})
+```
+
+---
+
 ### stop(callback)
+
+#### Arguments
+1. [`callback`] (function)
+
+#### Example
+```js
+Nat.audio.stop()
+```
+
+```js
+Nat.audio.stop(() => {
+    console.log('stopped')
+})
+```
 
 ---
 

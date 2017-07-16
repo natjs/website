@@ -1,32 +1,97 @@
 # Image
 
-### pick(params, callback)
-	params: Object
-		limit: Int (def: 9)
-		quality: Int (def: 100)
-		width: Int
-		height: Int
-	callback: Function(err, ret)
-		paths: Array
+```bash
+weexpack plugin add nat-media-image
+```
 
-### preview(files, params, callback)
-	files: Array
-	params: Object
-		current: Int (index)
-		style: String (dots | label | none, def: dots)
+### pick(options, callback)
 
-### info(path, callback)
-	path: String
-	callback: Function(err, ret)
-		width: Int (px)
-		height: Int (px)
-		type: String (png | jpeg | gif | bmp | webp | ico)
+#### Arguments
+1. `options` (Object)
+	- `limit` (Int) (default: `1`)
+	- `quality` (Int) (default: `100`)
+	- `width` (Int)
+	- `height` (Int)
+	- `showCamera` (Boolean) (default: `false`)
+2. [`callback`] (function)
 
-### exif(path, callback)
-	path: String
-	callback: Function(err, ret)
-	
-> See [Exif Info](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf)
+#### Returns
+1. `result` (Object)
+	- `paths` (Array)
+
+#### Example
+```js
+Nat.image.pick({
+	limit: 3,
+	showCamera: false
+}, (err, ret) => {
+	console.log(ret.paths)
+})
+```
+
+---
+
+### preview(urls, options, callback)
+
+#### Arguments
+1. `urls` (String|Array)
+2. [`options`] (Object)
+	- `current` (Int) (index)
+	- `style` (String) (`dots` | `label` | `none`, default: `dots`)
+3. [`callback`] (function)
+
+#### Example
+```js
+Nat.image.preview('http://cdn.instapp.io/nat/samples/01.jpeg')
+```
+
+```js
+Nat.image.preview([
+	'http://cdn.instapp.io/nat/samples/01.jpeg',
+	'http://cdn.instapp.io/nat/samples/02.jpeg'
+], {
+	current: 1,
+	style: 'none'
+})
+```
+
+---
+
+### info(url, callback)
+
+#### Arguments
+1. `url` (String)
+2. [`callback`] (function)
+
+#### Returns
+1. `result` (Object)
+	- `width` (Int)
+	- `height` (Int)
+
+#### Example
+```js
+Nat.image.info('http://cdn.instapp.io/nat/samples/01.jpeg', (err, ret) => {
+	console.log(ret)
+})
+```
+
+---
+
+### exif(url, callback)
+
+#### Arguments
+1. `url` (String)
+2. [`callback`] (function)
+
+#### Returns
+1. `result` (Object) ([Exif Info](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf))
+
+#### Example
+```js
+Nat.image.exif('http://cdn.instapp.io/nat/samples/01.jpeg', (err, ret) => {
+	console.log(ret)
+})
+```
 
 ---
 

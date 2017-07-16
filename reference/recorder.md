@@ -1,19 +1,63 @@
 # Recorder
 
-### start(options, callback)
-	options: Object
-		channel: String (stereo, mono, def: stereo)
-		quality: String (low [8000Hz, 8bit] | standard [22050Hz, 16bit] | high [44100Hz, 16bit], def: standard)
-	callback: Function(err, ret)
+```bash
+weexpack plugin add nat-media-recorder
+```
 
-> format: "aac" (iOS) / "wav" (Android)
+### start(options, callback)
+
+#### Arguments
+1. `options` (Object)
+    - `channel` (String) (`stereo`, `mono`, default: `stereo`)
+    - `quality` (String) (`low` [8000Hz, 8bit] | `standard` [22050Hz, 16bit] | `high` [44100Hz, 16bit], default: `standard`)
+2. [`callback`] (function)
+
+#### Example
+```js
+Nat.recorder.start({
+    channel: `mono`
+}, () => {
+    console.log('started')
+})
+```
+
+---
 
 ### pause(callback)
-	callback: Function(err, ret)
+
+#### Arguments
+1. [`callback`] (function)
+
+#### Example
+```js
+Nat.recorder.pause()
+```
+
+```js
+Nat.recorder.pause(() => {
+    console.log('paused')
+})
+```
+
+---
 
 ### stop(callback)
-	callback: Function(err, ret)
-		path: String
+
+#### Arguments
+1. [`callback`] (function)
+
+#### Returns
+1. `result` (Object)
+    - `path` (String)
+
+#### Example
+```js
+Nat.recorder.stop((err, ret) => {
+    console.log(ret.path)
+})
+```
+
+> format: "aac" (iOS) / "wav" (Android)
 
 ---
 

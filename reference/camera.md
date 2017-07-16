@@ -1,19 +1,50 @@
 # Camera
 
-### captureImage(params, callback)
-	params: Object
-		width: Int
-		height: Int
-	callback: Function(err, ret)
-		path: String
+```bash
+weexpack plugin add nat-camera
+```
+
+### captureImage(options, callback)
+
+#### Arguments
+1. [`options`] (Object)
+	- `width` (Int)
+	- `height` (Int)
+2. [`callback`] (function)
+
+#### Returns
+1. `result` (Object)
+	- `path` (String)
+
+#### Example
+```js
+Nat.camera.captureImage({}, (err, ret) => {
+	console.log(ret.path)
+})
+```
+
 > format: "jpeg"
 
-### captureVideo(params, callback)
-	params: Object
-		width: Int
-		height: Int
-	callback: Function(err, ret)
-		path: String
+---
+
+### captureVideo(options, callback)
+
+#### Arguments
+1. [`options`] (Object)
+	- `width` (Int)
+	- `height` (Int)
+2. [`callback`] (function)
+
+#### Returns
+1. `result` (Object)
+	- `path` (String)
+
+#### Example
+```js
+Nat.camera.captureVideo({}, (err, ret) => {
+	console.log(ret.path)
+})
+```
 
 > format: "mov"
 
