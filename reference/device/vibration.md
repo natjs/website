@@ -1,8 +1,23 @@
 # Vibration
 
-### vibrate(time, callback)
-	time: Int (ms) (def: 500)
+```bash
+weexpack plugin add nat-device-vibration
+```
 
+### vibrate(time, callback)
+
+#### Arguments
+1. [`time`] (Int) (ms, default: `500`) (*Android Only*)
+2. [`callback`] (Function)
+
+#### Example
+```js
+Nat.vibrate()
+```
+
+```js
+Nat.vibrate(2000)
+```
 ---
 
 > **Error**	

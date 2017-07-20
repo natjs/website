@@ -1,25 +1,64 @@
 # Geolocation
 
+```bash
+weexpack plugin add nat-geolocation
+```
+
 ### get(callback)
-	callback: Function(err, ret)
-		latitude: Float
-		longitude: Float
-		speed: Float (m/s)
-		accuracy: Int (m)
+
+#### Arguments
+1. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+	- `latitude` (Float)
+	- `longitude` (Float)
+	- `speed` (Float) (m/s)
+	- `accuracy` (Int) (m)
+
+#### Example
+```js
+Nat.geolocation.get((err, ret) => {
+	console.log(ret)
+})
+```
+
+---
 
 ### watch(options, callback)
-	options: Object
-		maximumAge: Int (ms)
-		timeout: Int (ms)
-		model: String (def: highAccuracy)
-	callback: Function(err, ret)
-		latitude: Float
-		longitude: Float
-		speed: Float (m/s)
-		accuracy: Int (m)
+1. [`options`] (Object)
+	- `maximumAge` (Int) (ms)
+	- `timeout` (Int) (ms)
+	- `model` (String) (`highAccuracy` | `lowAccuracy`, default: `highAccuracy`)
+2. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+	- `latitude` (Float)
+	- `longitude` (Float)
+	- `speed` (Float) (m/s)
+	- `accuracy` (Int) (m)
+
+#### Example
+```js
+Nat.geolocation.watch((err, ret) => {
+	console.log(ret)
+})
+```
+
+---
 
 ### clearWatch(callback)
-	callback: Function(err, ret)
+
+#### Arguments
+1. [`callback`] (Function)
+
+#### Example
+```js
+Nat.geolocation.clearWatch(() => {
+	console.log('cleared')
+})
+```
 
 ---
 

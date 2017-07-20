@@ -10,7 +10,7 @@ weexpack plugin add nat-camera
 1. [`options`] (Object)
 	- `width` (Int)
 	- `height` (Int)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Returns
 1. `result` (Object)
@@ -33,7 +33,7 @@ Nat.camera.captureImage({}, (err, ret) => {
 1. [`options`] (Object)
 	- `width` (Int)
 	- `height` (Int)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Returns
 1. `result` (Object)

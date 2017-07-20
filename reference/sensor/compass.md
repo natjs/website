@@ -1,17 +1,56 @@
 # Compass
 
+```bash
+weexpack plugin add nat-sensor-compass
+```
+
 ### get(callback)
-	callback: Function(err, ret)
-		heading: Float (0~359.99, magnetic)
+
+#### Arguments
+1. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+    - `heading` (Float) (0~359.99, magnetic)
+
+#### Example
+```js
+Nat.compass.get((err, ret) => {
+    console.log(ret)
+})
+```
+
+---
 
 ### watch(options, callback)
-	options: Object
-		interval: Int (ms, def: 100)
-	callback: Function(err, ret)
-		heading: Float (0~359.99, magnetic)
+1. [`options`] (Object)
+    - `interval` (Int) (ms, default: `32`)
+2. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+    - `heading` (Float) (0~359.99, magnetic)
+
+#### Example
+```js
+Nat.compass.watch((err, ret) => {
+    console.log(ret)
+})
+```
+
+---
 
 ### clearWatch(callback)
-	callback: Function(err, ret)
+
+#### Arguments
+1. [`callback`] (Function)
+
+#### Example
+```js
+Nat.compass.clearWatch(() => {
+    console.log('cleared')
+})
+```
 
 ---
 

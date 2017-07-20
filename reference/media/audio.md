@@ -8,7 +8,7 @@ weexpack plugin add nat-media-audio
 
 #### Arguments
 1. `url` (String)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Example
 ```js
@@ -26,7 +26,7 @@ Nat.audio.play('http://cdn.instapp.io/nat/samples/audio.mp3', () => {
 ### pause(callback)
 
 #### Arguments
-1. [`callback`] (function)
+1. [`callback`] (Function)
 
 #### Example
 ```js
@@ -44,7 +44,7 @@ Nat.audio.pause(() => {
 ### stop(callback)
 
 #### Arguments
-1. [`callback`] (function)
+1. [`callback`] (Function)
 
 #### Example
 ```js

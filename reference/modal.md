@@ -1,36 +1,121 @@
 # Modal
 
-### alert(params, callback)
-	params: Object
-		title: String
-		message: String
-		okButton: String (def: 'OK')
-	callback: Function
+```bash
+weexpack plugin add nat-modal
+```
 
-### confirm(params, callback)
-	params: Object
-		title: String
-		message: String
-		okButton: String (def: 'OK')
-		cancelButton: String (def: 'Cancel')
-	callback: Function(ret) (Boolean)
+### alert(options, callback)
 
-### prompt(params, callback)
-	params: Object
-		title: String
-		message: String
-		text: String
-		okButton: String (def: 'OK')
-		cancelButton: String (def: 'Cancel')
-	callback: Function(ret)
-		retult: Boolean
-		data: String
+#### Arguments
+1. `message`|`options` (String | Object)
+	- `title` (String)
+	- `message` (String)
+	- `okButton` (String) (default: `OK`)
+2. [`callback`] (Function)
 
-### toast(params, callback)
-	params: Object
-		message: String
-		duration: Int (ms)
-		postion: String (top | middle | bottom, def: bottom)
+#### Example
+```js
+Nat.alert('What\'s up')
+```
+
+```js
+Nat.alert({
+	title: 'Title',
+	message: 'This is an alert dialog',
+	okButton: 'I know'
+}, () => {
+	console.log('alerted')
+})
+```
+
+---
+
+### confirm(options, callback)
+
+#### Arguments
+1. `message`|`options` (String | Object)
+	- `title` (String)
+	- `message` (String)
+	- `okButton` (String) (default: `OK`)
+	- `cancelButton` (String) (default: `Cancel`)
+2. [`callback`] (Function)
+
+#### Returns
+1. `result` (Boolean)
+
+#### Example
+```js
+Nat.confirm('Are you okay?')
+```
+
+```js
+Nat.confirm({
+	title: 'Title',
+	message: 'Are you okay?',
+	okButton: 'I\'m OK',
+	cancelButton: 'Not OK'
+}, (err, ret) => {
+	console.log((ret) ? 'confirmed' : 'canceled')
+})
+```
+
+---
+
+### prompt(options, callback)
+
+#### Arguments
+1. `message`|`options` (String | Object)
+	- `title` (String)
+	- `message` (String)
+	- `text` (String)
+	- `okButton` (String) (default: `OK`)
+	- `cancelButton` (String) (default: `Cancel`)
+2. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+	- result (Boolean)
+	- data (String)
+
+#### Example
+```js
+Nat.prompt('Are you feeling lucky?')
+```
+
+```js
+Nat.prompt({
+	title: 'Title',
+	message: 'Are you feeling lucky?',
+	text: 'sure',
+	okButton: 'Yep',
+	cancelButton: 'Ignore'
+}, (err, ret) => {
+	console.log((ret.result) ? ret.data : 'canceled')
+})
+```
+
+---
+
+### toast(options)
+
+#### Arguments
+1. `message`|`options` (String | Object)
+	- `message` (String)
+	- `duration` (Int) (ms)
+	- `postion` (String) (`top` | `middle` | `bottom`, default: `bottom`)
+
+#### Example
+```js
+Nat.toast('What\'s up')
+```
+
+```js
+Nat.toast({
+	message: 'What\'s up up',
+	duration: 5000,
+	postion: 'top'
+})
+```
 
 ---
 

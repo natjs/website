@@ -13,16 +13,15 @@
 	- network
 		+ [stream](reference/network/stream.md)
 		+ [transfer](reference/network/transfer.md)
-		+ [websocket (wip)](reference/network/websocket.md)
 	- [geolocation](reference/geolocation.md)
 	- sensor
 		+ [accelerometer](reference/sensor/accelerometer.md)
 		+ [compass](reference/sensor/compass.md)
 	- device
-		+ [base (info)](reference/device/base.md)
+		+ [info](reference/device/info.md)
+		+ [network](reference/device/network.md)
 		+ [vibration](reference/device/vibration.md)
 		+ [screen](reference/device/screen.md)
 		+ [volume](reference/device/volume.md)
 		+ [battery](reference/device/battery.md)
 	- [storage (wip)](reference/storage.md)
-	- [contacts (wip)](reference/contacts.md)

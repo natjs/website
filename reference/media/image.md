@@ -13,7 +13,7 @@ weexpack plugin add nat-media-image
 	- `width` (Int)
 	- `height` (Int)
 	- `showCamera` (Boolean) (default: `false`)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Returns
 1. `result` (Object)
@@ -34,11 +34,11 @@ Nat.image.pick({
 ### preview(urls, options, callback)
 
 #### Arguments
-1. `urls` (String|Array)
+1. `urls` (String | Array)
 2. [`options`] (Object)
 	- `current` (Int) (index)
 	- `style` (String) (`dots` | `label` | `none`, default: `dots`)
-3. [`callback`] (function)
+3. [`callback`] (Function)
 
 #### Example
 ```js
@@ -61,7 +61,7 @@ Nat.image.preview([
 
 #### Arguments
 1. `url` (String)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Returns
 1. `result` (Object)
@@ -81,7 +81,7 @@ Nat.image.info('http://cdn.instapp.io/nat/samples/01.jpeg', (err, ret) => {
 
 #### Arguments
 1. `url` (String)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Returns
 1. `result` (Object) ([Exif Info](http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf))

@@ -8,7 +8,7 @@ weexpack plugin add nat-communication
 
 #### Arguments
 1. `to` (String)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Example
 ```js
@@ -26,11 +26,11 @@ Nat.call('415-736-0000', () => {
 ### mail(to, options, callback)
 
 #### Arguments
-1. `to` (String|Array)
+1. `to` (String | Array)
 2. [`options`] (Object)
     - `subject` (String)
     - `body` (String)
-3. [`callback`] (function)
+3. [`callback`] (Function)
 
 #### Example
 ```js
@@ -51,9 +51,9 @@ Nat.mail(['hi@natjs.com', 'dev@natjs.com'], {
 ### sms(to, message, callback)
 
 #### Arguments
-1. `to` (String|Array)
+1. `to` (String | Array)
 2. [`message`] (String)
-3. [`callback`] (function)
+3. [`callback`] (Function)
 
 #### Example
 ```js

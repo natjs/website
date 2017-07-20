@@ -1,7 +1,7 @@
-# Battery
+# Network
 
 ```bash
-weexpack plugin add nat-device-battery
+weexpack plugin add nat-device-network
 ```
 
 ### status(callback)
@@ -11,12 +11,11 @@ weexpack plugin add nat-device-battery
 
 #### Returns
 1. `result` (Object)
-    - `level` (Int) (0~100)
-    - `isPlugged` (Boolean)
+    - `type` (String) (`wifi` | `3g` | `4g` | `2g` | `unkown`)
 
 #### Example
 ```js
-Nat.battery.status((err, ret) => {
+Nat.network.status((err, ret) => {
     console.log(ret)
 })
 ```

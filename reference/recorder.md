@@ -10,7 +10,7 @@ weexpack plugin add nat-media-recorder
 1. `options` (Object)
     - `channel` (String) (`stereo`, `mono`, default: `stereo`)
     - `quality` (String) (`low` [8000Hz, 8bit] | `standard` [22050Hz, 16bit] | `high` [44100Hz, 16bit], default: `standard`)
-2. [`callback`] (function)
+2. [`callback`] (Function)
 
 #### Example
 ```js
@@ -26,7 +26,7 @@ Nat.recorder.start({
 ### pause(callback)
 
 #### Arguments
-1. [`callback`] (function)
+1. [`callback`] (Function)
 
 #### Example
 ```js
@@ -44,7 +44,7 @@ Nat.recorder.pause(() => {
 ### stop(callback)
 
 #### Arguments
-1. [`callback`] (function)
+1. [`callback`] (Function)
 
 #### Returns
 1. `result` (Object)

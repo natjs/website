@@ -1,19 +1,47 @@
 # Stream
 
-### fetch(options, callback)
-	options: Object
-		method: String (GET | POST | PUT | PATCH | DELETE | HEAD, def: GET)
-		url: String
-		headers: Object
-		type: String (json | jsonp | text, def: json)
-		body: String
-		(*) credentials: String
-	callback: Function(err, ret)
-		status: Int
-		statusText: String
-		ok: Boolean (if status is 2xx)
-		data: String
-		headers: String
+```bash
+weexpack plugin add nat-stream
+```
+
+### fetch(url, options, callback)
+
+#### Arguments
+1. `url` (String)
+2. [`options`] (Object)
+	- `method` (String) (`GET` | `POST` | `PUT` | `PATCH` | `DELETE` | `HEAD`, default: `GET`)
+	- `headers` (Object)
+	- `type` (String) (`json` | `jsonp` | `text`, default: `json`)
+	- `body` (String)
+2. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+	- `status` (Int)
+	- `statusText` (String)
+	- `ok` (Boolean) (status `2xx`)
+	- `headers` (String)
+	- `data` (String)
+
+#### Example
+```js
+Nat.fetch('https://suggest.taobao.com/sug?q=htc', (err, ret) => {
+	console.log(ret)
+})
+```
+
+```js
+Nat.fetch('https://suggest.taobao.com/sug?q=htc', {
+	method: 'GET',
+	headers: {
+		'x-app': 'nat/0.0.8',
+		'x-sign': 'bfbbf4c1f087d972'
+	},
+	type: 'json'
+}, (err, ret) => {
+	console.log(ret)
+})
+```
 
 ---
 

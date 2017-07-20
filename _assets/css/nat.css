@@ -16,6 +16,12 @@
   display: inline-block;
 }
 
+.markdown-section h3#install::before,
+.markdown-section h3#add-modules-you-need::before,
+.markdown-section h3#usage::before {
+  display: none;
+}
+
 section.cover {
   background: #fff !important;
 }

@@ -1,7 +1,104 @@
 # Transfer
 
-### download(params, callback)
-### upload(params, callback)
+```bash
+weexpack plugin add nat-transfer
+```
+
+### download(url, options, hooks, callback)
+
+#### Arguments
+1. `url` (String)
+2. [`options`] (Object)
+    - `headers` (Object)
+    - `target` (String)
+3. [`hooks`] (Object)
+    - `onProgress` (Function)
+4. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+    - `status` (Int)
+    - `statusText` (String)
+    - `ok` (Boolean) (status `2xx`)
+    - `headers` (String)
+    - `data` (String)
+
+#### Example
+```js
+Nat.download('http://cdn.instapp.io/nat/samples/audio.mp3', (err, ret) => {
+    console.log(ret)
+})
+```
+
+```js
+Nat.download('http://cdn.instapp.io/nat/samples/audio.mp3', {
+    headers: {
+        'x-app': 'nat/0.0.8',
+        'x-sign': 'bfbbf4c1f087d972'
+    },
+    target: '/instapp/nat/download'
+}, {
+    onProgress: (p) => {
+        console.log('Progressing: ' + p)
+    }
+}, (err, ret) => {
+    console.log(ret)
+})
+```
+
+---
+
+### upload(url, options, hooks, callback)
+
+#### Arguments
+1. `url` (String)
+2. `options` (Object)
+    - `path` (String)
+    - [`method`] (String) (`POST` | `PUT` | `PATCH`, default: `POST`)
+    - [`headers`] (Object)
+    - [`name`] (String)
+    - [`formData`] (Object)
+    - [`mimeType`] (String)
+3. [`hooks`] (Object)
+    - `onProgress` (Function)
+4. [`callback`] (Function)
+
+#### Returns
+1. `result` (Object)
+    - `status` (Int)
+    - `statusText` (String)
+    - `ok` (Boolean) (status `2xx`)
+    - `headers` (String)
+    - `data` (String)
+
+#### Example
+```js
+Nat.upload('http://uploader.example.com', {
+    path: 'file:///tmp/intapp/nat/sample/localFile'
+}, (err, ret) => {
+    console.log(ret)
+})
+```
+
+```js
+Nat.upload('http://uploader.example.com', {
+    path: 'file:///tmp/intapp/nat/sample/localFile',
+    method: 'PUT',
+    formData: {
+        framework: 'weex/nat'
+    },
+    headers: {
+        'x-app': 'nat/0.0.8',
+        'x-sign': 'bfbbf4c1f087d972'
+    }
+}, {
+    onProgress: (p) => {
+        console.log('Progressing: ' + p)
+    }
+}, (err, ret) => {
+    console.log(ret)
+})
+```
 
 ---
 

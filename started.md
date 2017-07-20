@@ -20,12 +20,17 @@ Import `natjs` in weex file (.we/.vue)
 <script>
 import Nat from 'natjs'
 
-// make a phone call
+// Make a phone call
 Nat.call('415-736-0000')
 
-// take a photo
+// Take a photo
 Nat.camera.captureImage((err, ret) => {
     console.log('Path: ', ret.path)
+})
+
+// Get device info
+Nat.device.info((err, ret) => {
+    console.log('Info: ', ret)
 })
 
 </script>
