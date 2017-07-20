@@ -14,7 +14,7 @@ weexpack plugin add [nat moudle]
 
 ### Usage
 
-Import `natjs` in weex file (.we/.vue)
+Use Nat in vue/weex file (`.vue`/`.we`)
 
 ```vue
 <script>
