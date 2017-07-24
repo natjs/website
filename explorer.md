@@ -1,4 +1,4 @@
-# Nat Explorer
+## Nat Explorer
 
 <img src="http://natjs.com/_assets/images/nat_screen_view.png" style="max-width: 720px; margin: -4% 0 0 -9%;">
 
