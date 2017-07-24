@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="162px" height="53px" viewBox="0 0 162 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>btn_app_store</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="160" height="50.9615385" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="162" height="52.9615385">
+            <rect x="-1" y="-1" width="162" height="52.9615385" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-28.000000, -18.000000)">
+            <g id="btn_app_store" transform="translate(29.000000, 19.000000)">
+                <g id="container">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#5D5D5D" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                </g>
+                <text id="Available-on-the" font-family="MyriadPro-Regular, Myriad Pro" font-size="14.35" font-weight="normal" letter-spacing="0.122999997" fill="#606060">
+                    <tspan x="38.974359" y="18.1346154">Available on the</tspan>
+                </text>
+                <text id="App-Store" font-family="MyriadPro-Regular, Myriad Pro" font-size="26.2400004" font-weight="normal" letter-spacing="-0.922500037" fill="#606060">
+                    <tspan x="38.974359" y="39.3653846">App Store</tspan>
+                </text>
+                <path d="M14.9527807,7.74616007 C13.4919387,7.74616007 12.3076923,9.0737357 12.3076923,10.7177649 L12.3076923,41.4668629 C12.3076923,43.1080349 13.4906287,44.4384678 14.9527807,44.4384678 L28.1241424,44.4384678 C29.5849844,44.4384678 30.7692308,43.1108921 30.7692308,41.4668629 L30.7692308,10.7177649 C30.7692308,9.07659289 29.5862943,7.74616007 28.1241424,7.74616007 L14.9527807,7.74616007 L14.9527807,7.74616007 Z M14.0384615,12.558266 L14.0384615,39.6263618 L29.0384615,39.6263618 L29.0384615,12.558266 L14.0384615,12.558266 L14.0384615,12.558266 Z M21.5384615,43.2354413 C22.1757132,43.2354413 22.6923077,42.696828 22.6923077,42.0324148 C22.6923077,41.3680016 22.1757132,40.8293883 21.5384615,40.8293883 C20.9012099,40.8293883 20.3846154,41.3680016 20.3846154,42.0324148 C20.3846154,42.696828 20.9012099,43.2354413 21.5384615,43.2354413 L21.5384615,43.2354413 Z M19.2307692,10.152213 C19.2307692,10.4844196 19.4290865,10.7537263 19.6901835,10.7537263 L23.3867396,10.7537263 C23.6404671,10.7537263 23.8461538,10.474704 23.8461538,10.152213 C23.8461538,9.82000644 23.6478365,9.55069979 23.3867396,9.55069979 L19.6901835,9.55069979 C19.436456,9.55069979 19.2307692,9.82972204 19.2307692,10.152213 Z" id="iPhone" fill="#5D5D5D"></path>
+            </g>
+        </g>
+    </g>
+</svg>
