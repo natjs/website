@@ -1,5 +1,5 @@
 - Getting started
-	- [Quick start](started.md#quick-start)
+	- [Quick start](started.md)
 
 - Nat Explorer
 	- [Introduction](explorer.md)
