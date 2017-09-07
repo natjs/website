@@ -7,7 +7,7 @@
 <br>
 
 
-[GitHub](https://github.com/natjs/)
+[GitHub](https://github.com/natjs/nat)
 [Get Started](#quick-start)
 
 <!-- ![color](#fff) -->
