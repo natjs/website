@@ -1,6 +1,6 @@
 ![nat](_assets/images/nat_logo.png)
 
-> Next generation mobile framework for building native / hybrid apps.
+> A powerful kit for adding native functionalities to your weex app.
 
 - lightweight, cross-platform, customizable, open source
 

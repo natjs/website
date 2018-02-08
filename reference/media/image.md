@@ -9,7 +9,6 @@ weexpack plugin add nat-media-image
 #### Arguments
 1. `options` (Object)
 	- `limit` (Int) (default: `1`)
-	- `quality` (Int) (default: `100`)
 	- `width` (Int)
 	- `height` (Int)
 	- `showCamera` (Boolean) (default: `false`)
