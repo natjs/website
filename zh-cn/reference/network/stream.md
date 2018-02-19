@@ -4,7 +4,7 @@
 weexpack plugin add nat-stream
 ```
 
-### fetch(url, options, callback) <span class="sub">Fetch</span>
+### fetch(url, options, callback) <small class="sub">Fetch</small>
 
 #### 参数
 1. `url` (String)

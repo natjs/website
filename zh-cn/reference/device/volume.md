@@ -4,7 +4,7 @@
 weexpack plugin add nat-device-volume
 ```
 
-### get(callback) <span class="sub">获取音量</span>
+### get(callback) <small class="sub">获取音量</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -20,7 +20,7 @@ Nat.volume.get((err, ret) => {
 })
 ```
 
-### set(value, callback) <span class="sub">设置音量</span>
+### set(value, callback) <small class="sub">设置音量</small>
 
 #### 参数
 1. `value` (Float) (0~1)

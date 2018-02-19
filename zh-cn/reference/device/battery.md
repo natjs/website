@@ -4,7 +4,7 @@
 weexpack plugin add nat-device-battery
 ```
 
-### status(callback) <span class="sub">获取电池状态</span>
+### status(callback) <small class="sub">获取电池状态</small>
 
 #### 参数
 1. [`callback`] (Function)

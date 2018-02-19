@@ -4,7 +4,7 @@
 weexpack plugin add nat-communication
 ```
 
-### call(to, callback) <span class="sub">拨打电话</span>
+### call(to, callback) <small class="sub">拨打电话</small>
 
 #### 参数
 1. `to` (String)
@@ -23,7 +23,7 @@ Nat.call('415-736-0000', () => {
 
 ---
 
-### mail(to, options, callback) <span class="sub">发送邮件</span>
+### mail(to, options, callback) <small class="sub">发送邮件</small>
 
 #### 参数
 1. `to` (String | Array)
@@ -48,7 +48,7 @@ Nat.mail(['hi@natjs.com', 'dev@natjs.com'], {
 
 ---
 
-### sms(to, message, callback) <span class="sub">发送短信</span>
+### sms(to, message, callback) <small class="sub">发送短信</small>
 
 #### 参数
 1. `to` (String | Array)

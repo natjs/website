@@ -4,7 +4,7 @@
 weexpack plugin add nat-sensor-compass
 ```
 
-### get(callback) <span class="sub">获取当前方位角</span>
+### get(callback) <small class="sub">获取当前方位角</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -22,7 +22,7 @@ Nat.compass.get((err, ret) => {
 
 ---
 
-### watch(options, callback) <span class="sub">实时监听方位角</span>
+### watch(options, callback) <small class="sub">实时监听方位角</small>
 1. [`options`] (Object)
     - `interval` (Int) (ms, default: `32`)
 2. [`callback`] (Function)
@@ -40,7 +40,7 @@ Nat.compass.watch((err, ret) => {
 
 ---
 
-### clearWatch(callback) <span class="sub">取消监听方位角</span>
+### clearWatch(callback) <small class="sub">取消监听方位角</small>
 
 #### 参数
 1. [`callback`] (Function)

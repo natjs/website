@@ -4,7 +4,7 @@
 weexpack plugin add nat-device-vibration
 ```
 
-### vibrate(time, callback) <span class="sub">振动</span>
+### vibrate(time, callback) <small class="sub">振动</small>
 
 #### 参数
 1. [`time`] (Int) (ms, default: `500`) (*Android Only*)

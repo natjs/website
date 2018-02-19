@@ -4,7 +4,7 @@
 weexpack plugin add nat-media-video
 ```
 
-### play(url, callback) <span class="sub">播放视频</span>
+### play(url, callback) <small class="sub">播放视频</small>
 
 #### 参数
 1. `url` (String)
@@ -23,7 +23,7 @@ Nat.video.play('http://cdn.instapp.io/nat/samples/video.mp4', () => {
 
 ---
 
-### pause(callback) <span class="sub">暂停视频</span>
+### pause(callback) <small class="sub">暂停视频</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -41,7 +41,7 @@ Nat.video.pause(() => {
 
 ---
 
-### stop(callback) <span class="sub">停止视频</span>
+### stop(callback) <small class="sub">停止视频</small>
 
 #### 参数
 1. [`callback`] (Function)

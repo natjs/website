@@ -4,7 +4,7 @@
 weexpack plugin add nat-media-audio
 ```
 
-### play(url, callback) <span class="sub">播放音频</span>
+### play(url, callback) <small class="sub">播放音频</small>
 
 #### 参数
 1. `url` (String)
@@ -23,7 +23,7 @@ Nat.audio.play('http://cdn.instapp.io/nat/samples/audio.mp3', () => {
 
 ---
 
-### pause(callback) <span class="sub">暂停音频</span>
+### pause(callback) <small class="sub">暂停音频</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -41,7 +41,7 @@ Nat.audio.pause(() => {
 
 ---
 
-### stop(callback) <span class="sub">停止音频</span>
+### stop(callback) <small class="sub">停止音频</small>
 
 #### 参数
 1. [`callback`] (Function)

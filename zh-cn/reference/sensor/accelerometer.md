@@ -4,7 +4,7 @@
 weexpack plugin add nat-sensor-accelerometer
 ```
 
-### get(callback) <span class="sub">获取当前加速度</span>
+### get(callback) <small class="sub">获取当前加速度</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -24,7 +24,7 @@ Nat.accelerometer.get((err, ret) => {
 
 ---
 
-### watch(options, callback) <span class="sub">实时监听加速度</span>
+### watch(options, callback) <small class="sub">实时监听加速度</small>
 
 #### 参数
 1. [`options`] (Object)
@@ -46,7 +46,7 @@ Nat.accelerometer.watch((err, ret) => {
 
 ---
 
-### clearWatch(callback) <span class="sub">取消监听加速度</span>
+### clearWatch(callback) <small class="sub">取消监听加速度</small>
 
 #### 参数
 1. [`callback`] (Function)

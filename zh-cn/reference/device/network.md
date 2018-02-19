@@ -4,7 +4,7 @@
 weexpack plugin add nat-device-network
 ```
 
-### status(callback) <span class="sub">获取网络状态</span>
+### status(callback) <small class="sub">获取网络状态</small>
 
 #### 参数
 1. [`callback`] (Function)

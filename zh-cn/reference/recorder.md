@@ -4,7 +4,7 @@
 weexpack plugin add nat-media-recorder
 ```
 
-### start(options, callback) <span class="sub">开始录音</span>
+### start(options, callback) <small class="sub">开始录音</small>
 
 #### 参数
 1. `options` (Object)
@@ -23,7 +23,7 @@ Nat.recorder.start({
 
 ---
 
-### pause(callback) <span class="sub">暂停录音</span>
+### pause(callback) <small class="sub">暂停录音</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -41,7 +41,7 @@ Nat.recorder.pause(() => {
 
 ---
 
-### stop(callback) <span class="sub">结束录音</span>
+### stop(callback) <small class="sub">结束录音</small>
 
 #### 参数
 1. [`callback`] (Function)

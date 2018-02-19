@@ -4,7 +4,7 @@
 weexpack plugin add nat-device-info
 ```
 
-### info(callback) <span class="sub">获取信息</span>
+### info(callback) <small class="sub">获取信息</small>
 
 #### 参数
 1. [`callback`] (Function)

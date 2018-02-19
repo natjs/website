@@ -4,7 +4,7 @@
 weexpack plugin add nat-device-screen
 ```
 
-### info(callback) <span class="sub">获取屏幕信息</span>
+### info(callback) <small class="sub">获取屏幕信息</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -26,7 +26,7 @@ Nat.screen.info((err, ret) => {
 
 ---
 
-### brightness.get(callback) <span class="sub">获取屏幕亮度</span>
+### brightness.get(callback) <small class="sub">获取屏幕亮度</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -44,7 +44,7 @@ Nat.screen.brightness.get((err, ret) => {
 
 ---
 
-### brightness.set(value, callback) <span class="sub">设置屏幕亮度</span>
+### brightness.set(value, callback) <small class="sub">设置屏幕亮度</small>
 
 #### 参数
 1. `value` (Float) (0~1)
@@ -67,7 +67,7 @@ Nat.screen.brightness.set(1, (err, ret) => {
 
 ---
 
-### orientation.status(callback) <span class="sub">获取屏幕方向状态</span>
+### orientation.status(callback) <small class="sub">获取屏幕方向状态</small>
 
 #### 参数
 1. [`callback`] (Function)

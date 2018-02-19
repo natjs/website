@@ -4,7 +4,7 @@
 weexpack plugin add nat-geolocation
 ```
 
-### get(callback) <span class="sub">获取当前定位</span>
+### get(callback) <small class="sub">获取当前定位</small>
 
 #### 参数
 1. [`callback`] (Function)
@@ -25,7 +25,7 @@ Nat.geolocation.get((err, ret) => {
 
 ---
 
-### watch(options, callback) <span class="sub">实时监听定位</span>
+### watch(options, callback) <small class="sub">实时监听定位</small>
 1. [`options`] (Object)
 	- `maximumAge` (Int) (ms)
 	- `timeout` (Int) (ms)
@@ -48,7 +48,7 @@ Nat.geolocation.watch((err, ret) => {
 
 ---
 
-### clearWatch(callback) <span class="sub">取消监听定位</span>
+### clearWatch(callback) <small class="sub">取消监听定位</small>
 
 #### 参数
 1. [`callback`] (Function)

@@ -4,7 +4,7 @@
 weexpack plugin add nat-transfer
 ```
 
-### download(url, options, hooks, callback) <span class="sub">下载</span>
+### download(url, options, hooks, callback) <small class="sub">下载</small>
 
 #### 参数
 1. `url` (String)
@@ -48,7 +48,7 @@ Nat.download('http://cdn.instapp.io/nat/samples/audio.mp3', {
 
 ---
 
-### upload(url, options, hooks, callback) <span class="sub">上传</span>
+### upload(url, options, hooks, callback) <small class="sub">上传</small>
 
 #### 参数
 1. `url` (String)

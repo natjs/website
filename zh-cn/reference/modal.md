@@ -4,7 +4,7 @@
 weexpack plugin add nat-modal
 ```
 
-### alert(options, callback) <span class="sub">警示框</span>
+### alert(options, callback) <small class="sub">警示框</small>
 
 #### 参数
 1. `message`|`options` (String | Object)
@@ -30,7 +30,7 @@ Nat.alert({
 
 ---
 
-### confirm(options, callback) <span class="sub">确认框</span>
+### confirm(options, callback) <small class="sub">确认框</small>
 
 #### 参数
 1. `message`|`options` (String | Object)
@@ -61,7 +61,7 @@ Nat.confirm({
 
 ---
 
-### prompt(options, callback) <span class="sub">对话框</span>
+### prompt(options, callback) <small class="sub">对话框</small>
 
 #### 参数
 1. `message`|`options` (String | Object)
@@ -96,7 +96,7 @@ Nat.prompt({
 
 ---
 
-### toast(options) <span class="sub">吐司条</span>
+### toast(options) <small class="sub">吐司条</small>
 
 #### 参数
 1. `message`|`options` (String | Object)

@@ -4,7 +4,7 @@
 weexpack plugin add nat-media-image
 ```
 
-### pick(options, callback) <span class="sub">选取图片</span>
+### pick(options, callback) <small class="sub">选取图片</small>
 
 #### 参数
 1. `options` (Object)
@@ -30,7 +30,7 @@ Nat.image.pick({
 
 ---
 
-### preview(urls, options, callback) <span class="sub">图片预览</span>
+### preview(urls, options, callback) <small class="sub">图片预览</small>
 
 #### 参数
 1. `urls` (String | Array)
@@ -56,7 +56,7 @@ Nat.image.preview([
 
 ---
 
-### info(url, callback) <span class="sub">查看图片信息</span>
+### info(url, callback) <small class="sub">查看图片信息</small>
 
 #### 参数
 1. `url` (String)
@@ -76,7 +76,7 @@ Nat.image.info('http://cdn.instapp.io/nat/samples/01.jpeg', (err, ret) => {
 
 ---
 
-### exif(url, callback) <span class="sub">查看图片EXIF信息</span>
+### exif(url, callback) <small class="sub">查看图片EXIF信息</small>
 
 #### 参数
 1. `url` (String)

@@ -4,7 +4,7 @@
 weexpack plugin add nat-camera
 ```
 
-### captureImage(options, callback) <span class="sub">拍照</span>
+### captureImage(options, callback) <small class="sub">拍照</small>
 
 #### 参数
 1. [`options`] (Object)
@@ -27,7 +27,7 @@ Nat.camera.captureImage({}, (err, ret) => {
 
 ---
 
-### captureVideo(options, callback) <span class="sub">录像</span>
+### captureVideo(options, callback) <small class="sub">录像</small>
 
 #### 参数
 1. [`options`] (Object)
