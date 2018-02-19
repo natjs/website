@@ -1,34 +1,34 @@
-## Quick start
+## 快速开始
 
 
-### Init your weex project first
+### 初始化 Weex 项目
 
 ```bash
 weexpack create [project name]
 ```
 
-### Enter your project folder
+### 进入项目目录
 
 ```bash
 cd [project name]
 ```
 
-### Install nat.js
+### 安装 nat.js
 
 ```bash
 npm install natjs --save
 ```
 
-### Add modules you need
+### 按需引入模块
 
 ```bash
 weexpack plugin add [nat moudle]
 ...
 ```
 
-### Usage
+### 开始使用
 
-Use Nat in vue/weex file (`.vue`/`.we`)
+在 vue/weex 文件中使用 Nat (`.vue`/`.we`)
 
 ```vue
 <script>

@@ -3,6 +3,7 @@
 
 - Nat Explorer
 	- [Introduction](explorer.md)
+	- [Download](explorer.md)
 
 - Reference
 	- [communication](reference/communication.md)
@@ -27,4 +28,3 @@
 		+ [screen](reference/device/screen.md)
 		+ [volume](reference/device/volume.md)
 		+ [battery](reference/device/battery.md)
-	- [storage (wip)](reference/storage.md)

@@ -1,21 +1,21 @@
-# Accelerometer
+# 加速器 / Accelerometer
 
 ```bash
 weexpack plugin add nat-sensor-accelerometer
 ```
 
-### get(callback)
+### get(callback) <span class="sub">获取当前加速度</span>
 
-#### Arguments
+#### 参数
 1. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
 	- `x` (Float) (m/s^2)
 	- `y` (Float) (m/s^2)
 	- `z` (Float) (m/s^2)
 
-#### Example
+#### 示例
 ```js
 Nat.accelerometer.get((err, ret) => {
 	console.log(ret)
@@ -24,20 +24,20 @@ Nat.accelerometer.get((err, ret) => {
 
 ---
 
-### watch(options, callback)
+### watch(options, callback) <span class="sub">实时监听加速度</span>
 
-#### Arguments
+#### 参数
 1. [`options`] (Object)
 	- `interval` (Int) (ms, default: `32`)
 2. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
 	- `x` (Float) (m/s^2)
 	- `y` (Float) (m/s^2)
 	- `z` (Float) (m/s^2)
 
-#### Example
+#### 示例
 ```js
 Nat.accelerometer.watch((err, ret) => {
 	console.log(ret)
@@ -46,12 +46,12 @@ Nat.accelerometer.watch((err, ret) => {
 
 ---
 
-### clearWatch(callback)
+### clearWatch(callback) <span class="sub">取消监听加速度</span>
 
-#### Arguments
+#### 参数
 1. [`callback`] (Function)
 
-#### Example
+#### 示例
 ```js
 Nat.accelerometer.clearWatch(() => {
 	console.log('cleared')

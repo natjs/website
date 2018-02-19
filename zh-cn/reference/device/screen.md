@@ -1,15 +1,15 @@
-# Screen
+# 屏幕 / Screen
 
 ```bash
 weexpack plugin add nat-device-screen
 ```
 
-### info(callback)
+### info(callback) <span class="sub">获取屏幕信息</span>
 
-#### Arguments
+#### 参数
 1. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
     - `height` (Int)
     - `width` (Int)
@@ -17,7 +17,7 @@ weexpack plugin add nat-device-screen
     - `dpiX` (Int)
     - `dpiY` (Int)
 
-#### Example
+#### 示例
 ```js
 Nat.screen.info((err, ret) => {
     console.log(ret)
@@ -26,16 +26,16 @@ Nat.screen.info((err, ret) => {
 
 ---
 
-### brightness.get(callback)
+### brightness.get(callback) <span class="sub">获取屏幕亮度</span>
 
-#### Arguments
+#### 参数
 1. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
     - `brightness` (Float) (0~1)
 
-#### Example
+#### 示例
 ```js
 Nat.screen.brightness.get((err, ret) => {
     console.log(ret)
@@ -44,17 +44,17 @@ Nat.screen.brightness.get((err, ret) => {
 
 ---
 
-### brightness.set(value, callback)
+### brightness.set(value, callback) <span class="sub">设置屏幕亮度</span>
 
-#### Arguments
+#### 参数
 1. `value` (Float) (0~1)
 2. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
     - `brightness` (Float) (0~1)
 
-#### Example
+#### 示例
 ```js
 Nat.screen.brightness.set(1)
 ```
@@ -67,16 +67,16 @@ Nat.screen.brightness.set(1, (err, ret) => {
 
 ---
 
-### orientation.status(callback)
+### orientation.status(callback) <span class="sub">获取屏幕方向状态</span>
 
-#### Arguments
+#### 参数
 1. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
     - `orientation` (String) (`portrait` | `landscape` | `landscape-left` | `landscape-right` | `portrait-down`)
 
-#### Example
+#### 示例
 ```js
 Nat.screen.orientation.status((err, ret) => {
     console.log(ret)

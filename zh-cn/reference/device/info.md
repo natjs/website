@@ -1,15 +1,15 @@
-# Info
+# 设备信息 / Info
 
 ```bash
 weexpack plugin add nat-device-info
 ```
 
-### info(callback)
+### info(callback) <span class="sub">获取信息</span>
 
-#### Arguments
+#### 参数
 1. [`callback`] (Function)
 
-#### Returns
+#### 返回
 1. `result` (Object)
     - `model` (String)
     - `vendor` (String)
@@ -19,7 +19,7 @@ weexpack plugin add nat-device-info
     - `language` (String)
     - `isVirtual` (Boolean) (*iOS Only*)
 
-#### Example
+#### 示例
 ```js
 Nat.device.info((err, ret) => {
     console.log(ret)
