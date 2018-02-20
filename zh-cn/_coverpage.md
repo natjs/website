@@ -6,8 +6,7 @@
 
 <br>
 
-
 [GitHub](https://github.com/natjs/nat)
-[快速开始](#quick-start)
+[快速开始](#快速开始)
 
 <!-- ![color](#fff) -->
