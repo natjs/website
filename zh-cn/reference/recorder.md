@@ -1,7 +1,7 @@
 # 录音机 / Recorder
 
 ```bash
-weexpack plugin add nat-media-recorder
+weexpack plugin add nat-recorder
 ```
 
 ### start(options, callback) <small class="sub">开始录音</small>

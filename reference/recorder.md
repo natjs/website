@@ -1,7 +1,7 @@
 # Recorder
 
 ```bash
-weexpack plugin add nat-media-recorder
+weexpack plugin add nat-recorder
 ```
 
 ### start(options, callback)
